@@ -7,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/items")
@@ -23,8 +22,8 @@ public class ProductController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable String id) {
-        Optional<Product> product = productService.getProductById(id);
-        return product.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+        Product product = productService.getProductById(id);
+        return ResponseEntity.ok(product);
     }
 
     @PostMapping
@@ -34,16 +33,11 @@ public class ProductController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Product> updateProduct(@PathVariable String id, @RequestBody Product productDetails) {
-        Optional<Product> product = productService.getProductById(id);
-        if (product.isPresent()) {
-            Product updatedProduct = product.get();
-            updatedProduct.setName(productDetails.getName());
-            updatedProduct.setDescription(productDetails.getDescription());
-            updatedProduct.setPrice(productDetails.getPrice());
-            return ResponseEntity.ok(productService.saveProduct(updatedProduct));
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        Product updatedProduct = productService.getProductById(id);
+        updatedProduct.setName(productDetails.getName());
+        updatedProduct.setDescription(productDetails.getDescription());
+        updatedProduct.setPrice(productDetails.getPrice());
+        return ResponseEntity.ok(productService.saveProduct(updatedProduct));
     }
 
     @DeleteMapping("/{id}")

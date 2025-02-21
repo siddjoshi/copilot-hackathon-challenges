@@ -1,12 +1,12 @@
 package com.siemens.copilothackathonchallenge4.service;
 
 import com.siemens.copilothackathonchallenge4.entity.Product;
+import com.siemens.copilothackathonchallenge4.exception.ProductNotFoundException;
 import com.siemens.copilothackathonchallenge4.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ProductService {
@@ -18,8 +18,9 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public Optional<Product> getProductById(String id) {
-        return productRepository.findById(id);
+    public Product getProductById(String id) {
+        return productRepository.findById(id)
+                .orElseThrow(() -> new ProductNotFoundException(id));
     }
 
     public Product saveProduct(Product product) {
@@ -27,6 +28,9 @@ public class ProductService {
     }
 
     public void deleteProduct(String id) {
+        if (!productRepository.existsById(id)) {
+            throw new ProductNotFoundException(id);
+        }
         productRepository.deleteById(id);
     }
 }
