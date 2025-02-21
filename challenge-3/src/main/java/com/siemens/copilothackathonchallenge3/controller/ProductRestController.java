@@ -22,7 +22,7 @@ public class ProductRestController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable String id) {
-        Product product = productService.getProductById(id);
+        Product product = productService.getProductById(Long.valueOf(id));
         return ResponseEntity.ok(product);
     }
 
@@ -33,7 +33,7 @@ public class ProductRestController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Product> updateProduct(@PathVariable String id, @RequestBody Product productDetails) {
-        Product updatedProduct = productService.getProductById(id);
+        Product updatedProduct = productService.getProductById(Long.valueOf(id));
         updatedProduct.setName(productDetails.getName());
         updatedProduct.setDescription(productDetails.getDescription());
         updatedProduct.setPrice(productDetails.getPrice());
@@ -42,7 +42,7 @@ public class ProductRestController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable String id) {
-        productService.deleteProduct(id);
+        productService.deleteProduct(Long.valueOf(id));
         return ResponseEntity.noContent().build();
     }
 }

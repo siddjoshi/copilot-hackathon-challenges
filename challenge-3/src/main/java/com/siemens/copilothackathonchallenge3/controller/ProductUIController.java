@@ -30,7 +30,7 @@ public class ProductUIController {
 
     @GetMapping("/products/edit/{id}")
     public String showEditForm(@PathVariable String id, Model model) {
-        Product product = productService.getProductById(id);
+        Product product = productService.getProductById(Long.valueOf(id));
         model.addAttribute("product", product);
         return "product_form";
     }
@@ -43,7 +43,7 @@ public class ProductUIController {
 
     @GetMapping("/products/delete/{id}")
     public String deleteProduct(@PathVariable String id) {
-        productService.deleteProduct(id);
+        productService.deleteProduct(Long.valueOf(id));
         return "redirect:/products";
     }
 }

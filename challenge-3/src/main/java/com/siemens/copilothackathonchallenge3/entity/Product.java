@@ -15,6 +15,17 @@ public class Product {
     private String description;
     private double price;
 
+    public Product() {
+
+    }
+
+    public Product(Long id, String name ,String description,double price) {
+        this.id = id;
+        this.price = price;
+        this.description = description;
+        this.name = name;
+    }
+
     // Getters and Setters
     public Long getId() {
         return id;
