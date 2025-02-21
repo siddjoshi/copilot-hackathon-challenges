@@ -1,7 +1,7 @@
-package com.siemens.copilothackathonchallenge4.controller;
+package com.siemens.copilothackathonchallenge3.controller;
 
-import com.siemens.copilothackathonchallenge4.entity.Product;
-import com.siemens.copilothackathonchallenge4.service.ProductService;
+import com.siemens.copilothackathonchallenge3.entity.Product;
+import com.siemens.copilothackathonchallenge3.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/items")
-public class ProductController {
+public class ProductRestController {
 
     @Autowired
     private ProductService productService;

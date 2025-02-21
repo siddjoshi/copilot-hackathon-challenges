@@ -1,4 +1,4 @@
-package com.siemens.copilothackathonchallenge4.entity;
+package com.siemens.copilothackathonchallenge3.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

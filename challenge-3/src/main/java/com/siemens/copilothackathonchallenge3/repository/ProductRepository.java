@@ -1,6 +1,6 @@
-package com.siemens.copilothackathonchallenge4.repository;
+package com.siemens.copilothackathonchallenge3.repository;
 
-import com.siemens.copilothackathonchallenge4.entity.Product;
+import com.siemens.copilothackathonchallenge3.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

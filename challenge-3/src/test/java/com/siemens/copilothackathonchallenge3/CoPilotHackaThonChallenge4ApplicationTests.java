@@ -1,4 +1,4 @@
-package com.siemens.copilothackathonchallenge4;
+package com.siemens.copilothackathonchallenge3;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.siemens.copilothackathonchallenge4.exception;
+package com.siemens.copilothackathonchallenge3.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

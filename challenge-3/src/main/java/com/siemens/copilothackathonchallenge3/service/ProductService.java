@@ -1,8 +1,8 @@
-package com.siemens.copilothackathonchallenge4.service;
+package com.siemens.copilothackathonchallenge3.service;
 
-import com.siemens.copilothackathonchallenge4.entity.Product;
-import com.siemens.copilothackathonchallenge4.exception.ProductNotFoundException;
-import com.siemens.copilothackathonchallenge4.repository.ProductRepository;
+import com.siemens.copilothackathonchallenge3.entity.Product;
+import com.siemens.copilothackathonchallenge3.exception.ProductNotFoundException;
+import com.siemens.copilothackathonchallenge3.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

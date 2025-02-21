@@ -1,4 +1,4 @@
-package com.siemens.copilothackathonchallenge4.exception;
+package com.siemens.copilothackathonchallenge3.exception;
 
 public class ProductNotFoundException extends RuntimeException {
     public ProductNotFoundException(String id) {
