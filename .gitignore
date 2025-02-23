@@ -9,3 +9,11 @@ challenge-1/java-calculator-copilot/target/test-classes/example/ArithmeticIntegr
 challenge-1/java-calculator-copilot/target/test-classes/example/action/ArithmeticActionTest.class
 challenge-4/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682_VP5-1920x600.avif
 .DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+.env

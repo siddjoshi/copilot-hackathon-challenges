@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": "123",
+      "name": "John Doe",
+      "fitnessLevel": "beginner",
+      "goals": [
+        "strength",
+        "endurance"
+      ],
+      "dietaryPreferences": [
+        "vegetarian"
+      ],
+      "progress": [
+        {
+          "date": "2025-02-19",
+          "weight": 70,
+          "bodyFatPercentage": 20
+        },
+        {
+          "date": "2025-01-19",
+          "weight": 70,
+          "bodyFatPercentage": 24
+        }
+      ]
+    },
+    {
+      "id": "124",
+      "name": "Jane Smith",
+      "fitnessLevel": "intermediate",
+      "goals": [
+        "flexibility",
+        "cardio"
+      ],
+      "dietaryPreferences": [
+        "vegan"
+      ],
+      "progress": [
+        {
+          "date": "2025-02-18",
+          "weight": 65,
+          "bodyFatPercentage": 18
+        }
+      ]
+    }
+  ]
+}
