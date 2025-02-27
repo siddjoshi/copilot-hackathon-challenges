@@ -1,0 +1,9 @@
+sensor_id,timestamp,value,sensor_type
+T001,2023-10-01 12:00:00,100,temperature
+T001,2023-10-01 12:10:00,5,temperature
+P001,2023-10-01 12:00:00,200,pressure
+P001,2023-10-01 12:15:00,40,pressure
+V001,2023-10-01 12:00:00,1.0,vibration
+V001,2023-10-01 12:05:00,0.1,vibration
+T002,2023-10-01 12:00:00,50,temperature
+T002,2023-10-01 12:20:00,100,temperature
