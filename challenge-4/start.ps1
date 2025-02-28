@@ -35,7 +35,7 @@ function Get-CRC32Checksum {
 }
 
 # Example Usage
-$FilePath = "/Users/olaflange/_dev/source/ghcp_hackathon/_fork/copilot-hackathon-challenges/challenge-4/azure-overview.png"
+$FilePath = "C:\Users\z004v6fu\Desktop\GHCP\ghcpnew2\copilot-hackathon-challenges\challenge-4\azure-overview.png"
 
 Write-Output "Calculating CRC32 checksum for file: $FilePath"
 
