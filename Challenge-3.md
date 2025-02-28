@@ -18,6 +18,15 @@
 - Install Maven or Gradle if they aren't already installed.
 - Set up your project as a Maven or Gradle project in your IDE. This will create the necessary project structure.
 
+#### For Python:
+- Ensure you have Python installed. You'll need Python 3.6 or higher.
+- Verify installation by running `python --version` in your terminal. This should return the installed version.
+- Set up a virtual environment by running `python -m venv venv`.
+- Activate the virtual environment:
+  - On Windows: `venv\Scripts\activate`
+  - On macOS/Linux: `source venv/bin/activate`
+- Install the necessary dependencies using `pip install -r requirements.txt`.
+
 #### For Other Languages:
 - Set up the development environment for your chosen language
 - Install the necessary runtime and development tools
